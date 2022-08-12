@@ -8,23 +8,21 @@ window.onload = function() {
     document.getElementById("c++").setAttribute("class", "hidden");
   
     const creation = document.querySelector("input[name='creation']:checked").value; 
-    let firstName = document.getElementById("first-name").value;
-    let lastName = document.getElementById("last-name").value;
+    const firstName = document.getElementById("first-name").value;
+    const lastName = document.getElementById("last-name").value;
 
-    document.querySelector("span#name").innerHTML = firstName + " " + lastName;
+    document.querySelector("span.name").innerText = firstName + " " + lastName;
+    document.querySelector("span.name2").innerText = firstName + " " + lastName;
+    document.querySelector("span.name3").innerText = firstName + " " + lastName;
+    document.querySelector("span.name4").innerText = firstName + " " + lastName;
   
-    console.log(creation);
-    if (creation === "apple-apps") {
+    if (creation == "apple-apps") {
       document.getElementById("swift").removeAttribute("class");
-      console.log("GO");
-    } else if (creation === "android-apps") {
-      console.log("GO");
+    } else if (creation == "android-apps") {
       document.getElementById("java").removeAttribute("class");
-    } else if (creation === "websites") {
-      console.log("GO");
+    } else if (creation == "websites") {
       document.getElementById("python").removeAttribute("class");
     } else {
-      console.log("GO");
       document.getElementById("c++").removeAttribute("class");
     }
   } 
