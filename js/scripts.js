@@ -7,23 +7,24 @@ window.onload = function() {
     document.getElementById("python").setAttribute("class", "hidden");
     document.getElementById("c++").setAttribute("class", "hidden");
   
-    const creation = document.querySelector("input[name='creation']:checked").value; 
     const firstName = document.getElementById("first-name").value;
     const lastName = document.getElementById("last-name").value;
+    const selectElements = document.getElementsByClassName("select").value;
+
 
     document.querySelector("span.name").innerText = firstName + " " + lastName;
     document.querySelector("span.name2").innerText = firstName + " " + lastName;
     document.querySelector("span.name3").innerText = firstName + " " + lastName;
     document.querySelector("span.name4").innerText = firstName + " " + lastName;
   
-    if (creation == "apple-apps") {
-      document.getElementById("swift").removeAttribute("class");
-    } else if (creation == "android-apps") {
+    if (selectElements === "a" > "b", "c", "d") {
       document.getElementById("java").removeAttribute("class");
-    } else if (creation == "websites") {
+    } else if (selectElements === "b" > "a", "c", "d") {
       document.getElementById("python").removeAttribute("class");
-    } else {
+    } else if (selectElements === "c" > "a", "b", "d") {
       document.getElementById("c++").removeAttribute("class");
+    } else {
+      document.getElementById("swift").removeAttribute("class");
     }
   } 
 }
