@@ -1,16 +1,22 @@
 window.onload = function() {
-  let form = document.querySelector("form");
-  form.onsubmit = function(event) {
+  document.querySelector("form").onsubmit = function(event) {
     event.preventDefault();
-    inputs()
-  };
-}
-
-function inputs () {
-  const firstName = document.getElementById("first-name").value;
-  const lastName = document.getElementById("last-name").value;
-  const creation = document.querySelector("input[name='creation']:checked").value;
-  const level = document.getElementById("level").value;
-  const studyMethod = document.querySelector("input[name='study-method']:checked").value;
-  const connections = document.getElementById("connections").value;
+    
+    document.getElementById("swift").setAttribute("class", "hidden");
+    document.getElementById("java").setAttribute("class", "hidden");
+    document.getElementById("python").setAttribute("class", "hidden");
+    document.getElementById("c++").setAttribute("class", "hidden");
+  
+    const creation = document.querySelector("input[name='creation']:checked").value;
+  
+    if (creation === "apple-apps") {
+      document.getElementById("swift").removeAttribute("class");
+    } else if (creation === "android-apps") {
+      document.getElementById("java").removeAttribute("class");
+   } else if (creation === "websites") {
+      document.getElementById("python").removeAttribute("class");
+    } else if (creation === "games") {
+      document.getElementById("c++").removeAttribute("class");
+    }
+  } 
 }
