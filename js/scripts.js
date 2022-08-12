@@ -11,7 +11,7 @@ window.onload = function() {
     let firstName = document.getElementById("first-name").value;
     let lastName = document.getElementById("last-name").value;
 
-    document.querySelector(".name").innerHTML = firstName + " " + lastName;
+    document.querySelector("span#name").innerHTML = firstName + " " + lastName;
   
     console.log(creation);
     if (creation === "apple-apps") {

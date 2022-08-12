@@ -18,6 +18,7 @@
 .survey {
   border: 5px solid rgb(39, 39, 104);
   padding: 6px;
+  padding-bottom: 30px;
 }
 
 .survey h2 {
