@@ -15,15 +15,15 @@ window.onload = function() {
   
     console.log(creation);
     if (creation === "apple-apps") {
-      console.log("GO");
       document.getElementById("swift").removeAttribute("class");
+      console.log("GO");
     } else if (creation === "android-apps") {
       console.log("GO");
       document.getElementById("java").removeAttribute("class");
     } else if (creation === "websites") {
       console.log("GO");
       document.getElementById("python").removeAttribute("class");
-    } else if (creation === "games") {
+    } else {
       console.log("GO");
       document.getElementById("c++").removeAttribute("class");
     }
