@@ -8,6 +8,8 @@ window.onload = function() {
     document.getElementById("c++").setAttribute("class", "hidden");
   
     const creation = document.querySelector("input[name='creation']:checked").value;
+    const firstName = document.getElementById("first-name").value;
+    const lastName = document.getElementById("last-name").value;
   
     if (creation === "apple-apps") {
       document.getElementById("swift").removeAttribute("class");
@@ -18,5 +20,8 @@ window.onload = function() {
     } else if (creation === "games") {
       document.getElementById("c++").removeAttribute("class");
     }
+
+    document.querySelector("span#firstn").innerText = firstName;
+    document.querySelector("span#lastn").innerText = lastName;
   } 
 }
