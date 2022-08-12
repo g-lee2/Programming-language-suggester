@@ -13,7 +13,7 @@ window.onload = function() {
       document.getElementById("swift").removeAttribute("class");
     } else if (creation === "android-apps") {
       document.getElementById("java").removeAttribute("class");
-   } else if (creation === "websites") {
+    } else if (creation === "websites") {
       document.getElementById("python").removeAttribute("class");
     } else if (creation === "games") {
       document.getElementById("c++").removeAttribute("class");
