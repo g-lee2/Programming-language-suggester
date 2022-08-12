@@ -22,3 +22,8 @@
   font-family: fantasy;
 }
 
+.results img {
+  max-height: 150px;
+  max-width: 150px;
+}
+
