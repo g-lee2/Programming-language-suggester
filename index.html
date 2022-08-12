@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Programming Language Suggester</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <h1>Which language should you learn?</h1>
+  <p>Answer these questions and find out which programming language you should learn first!</p>
+  <br>
+  <h2>Please enter your first and last name!</h2>
+  <form id="languageq">
+    <label for="first-name">First Name</label>
+    <input id="first-name" type="text">
+    <label for="last-name">Last Name</label>
+    <input id="last-name" type="text">
+    <br>
+    <br>
+    <br>
+    <h2>Please select what you want to create using the programming language:</h2>
+    <label>
+      <input type="radio" name="creation" value="apple-apps">
+      Apple apps 
+    </label>
+    <label>
+      <input type="radio" name="creation" value="android-apps">
+      Android apps 
+    </label>
+    <label>
+      <input type="radio" name="creation" value="games">
+      Games
+    </label>
+    <label>
+      <input type="radio" name="creation" value="multiply">
+      Websites
+    </label>
+    <br>
+    <br>
+    <br>
+    <h2>Please select your background in coding:</h2>
+    <select id="level">
+      <option>Complete beginner</option>
+      <option>Tried studying a programming language on my own</option>
+      <option>Dabbled in html/css (just a little)</option>
+      <option>Dabbled in html/css (have a decent understanding of the basics)</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <h2>Please select how you're going to study:</h2>
+    <label>
+      <input type="radio" name="study-method" value="self">
+      Self-study (using YouTube or books)
+    </label>
+    <label>
+      <input type="radio" name="study-method" value="bootcamp1">
+      Join a live/in-person bootcamp
+    </label>
+    <label>
+      <input type="radio" name="study-method" value="school">
+      Learn in school (high-school, CC, university, etc)
+    </label>
+    <label>
+      <input type="radio" name="study-method" value="udemy">
+      Buy a Udemy course
+    </label>
+    <br>
+    <br>
+    <br>
+    <h2>Do you know anyone (with a background in coding) that can give you advice:</h2>
+    <select id="connections">
+      <option>Yes (a friend or family member)</option>
+      <option>Sort of (I know people who know people)</option>
+      <option>No</option>
+    </select>
+    <br>
+    <br>
+    <br>
+
+    <button type="submit" class="btn">Give me my language!</button>
+  </form>
+  <br>
+  <br>
+
+  <h1>You may want to consider learning:</h1>
+  <p id="output"></p>
+</body>
+</html>
