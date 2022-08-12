@@ -2,6 +2,10 @@
   display: none;
 }
 
+body{
+  background-image: linear-gradient(rgb(158, 158, 217), rgb(179, 183, 197), rgb(255, 218, 224));
+}
+
 .intro {
   text-align: center;
 }
